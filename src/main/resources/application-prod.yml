@@ -1,0 +1,13 @@
+spring:
+  profiles: prod
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgresdb:5432/doctor_on_demand
+    username: postgres
+    password: postgres
+  #    initialization-mode: always
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect

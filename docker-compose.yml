@@ -1,0 +1,33 @@
+version: "3"
+services:
+  postgresdb:
+    image: postgres
+    container_name: doctor-on-demand-db
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    environment:
+      POSTGRES_DB: doctor_on_demand
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    restart: always
+  backend:
+    build: .
+    image: backend
+    container_name: doctor-on-demand-backend
+    volumes:
+      - C:\Workspace\doctor-on-demand\doctor-on-demand-server\src\main\resources\db\prod\prod-schema.sql
+      - C:\Workspace\doctor-on-demand\doctor-on-demand-server\src\main\resources\db\prod\prod-data.sql
+      - db-data:/var/lib/postgresql/data
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresdb:5432/doctor_on_demand
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+    ports:
+    - 8080:8080
+    depends_on:
+      - postgresdb
+    restart: always
+volumes:
+  db-data:

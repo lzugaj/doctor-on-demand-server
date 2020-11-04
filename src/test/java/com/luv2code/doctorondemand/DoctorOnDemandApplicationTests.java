@@ -6,7 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DoctorOnDemandApplicationTests {
 
+    @SuppressWarnings("squid:S2699")
     @Test
-    void contextLoads() {
+    public void main() {
+        DoctorOnDemandApplication.main(new String[] {});
     }
 }

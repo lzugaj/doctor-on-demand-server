@@ -1,5 +1,7 @@
 package com.luv2code.doctorondemand.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,12 +11,11 @@ import org.springframework.context.annotation.Profile;
 @ConfigurationProperties("spring.datasource")
 public class DBConfig {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DBConfig.class);
+
     private String driverClassName;
-
     private String url;
-
     private String username;
-
     private String password;
 
     public String getDriverClassName() {
@@ -52,26 +53,22 @@ public class DBConfig {
     @Bean
     @Profile("dev")
     public String devDatabaseConnection() {
-        System.out.println("\n-----------------------------------------");
-        System.out.println("DB connection for DEV - H2");
-        System.out.println("Driver class name: " + driverClassName);
-        System.out.println("URL: " + url);
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
-        System.out.println("-----------------------------------------\n");
+        LOGGER.info("DB connection for DEV - H2");
+        LOGGER.info("Driver class name: {}", driverClassName);
+        LOGGER.info("URL: {}", url);
+        LOGGER.info("Username: {}", username);
+        LOGGER.info("Password: {}", password);
         return "DB connection for DEV - H2";
     }
 
     @Bean
     @Profile("prod")
     public String prodDatabaseConnection() {
-        System.out.println("\n-----------------------------------------");
-        System.out.println("DB connection for DEV - Postgres");
-        System.out.println("Driver class name: " + driverClassName);
-        System.out.println("URL: " + url);
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
-        System.out.println("-----------------------------------------\n");
+        LOGGER.info("DB connection for PROD - Postgres");
+        LOGGER.info("Driver class name: {}", driverClassName);
+        LOGGER.info("URL: {}", url);
+        LOGGER.info("Username: {}", username);
+        LOGGER.info("Password: {}", password);
         return "DB connection for PROD - Postgres";
     }
 }

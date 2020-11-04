@@ -3,20 +3,35 @@ pipeline {
     triggers {
         pollSCM '* * * * *'
     }
+
     stages {
+        stage('Clean') {
+            steps {
+                bat './gradlew clean'
+            }
+        }
+
         stage('Build') {
             steps {
-                sh 'gradle assemble'
+                bat './gradlew assemble'
             }
         }
+
         stage('Test') {
             steps {
-                sh 'gradle test'
+                bat './gradlew test'
             }
         }
+
+        stage('SonarQube Analysis') {
+            steps {
+                bat './gradlew sonar'
+            }
+        }
+
         stage('Deploy') {
             steps {
-                sh 'gradle build'
+                bat './gradlew build'
             }
         }
     }

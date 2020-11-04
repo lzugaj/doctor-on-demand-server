@@ -14,11 +14,8 @@ public class DBConfig {
     private static final Logger LOGGER = LoggerFactory.getLogger(DBConfig.class);
 
     private String driverClassName;
-
     private String url;
-
     private String username;
-
     private String password;
 
     public String getDriverClassName() {
@@ -56,26 +53,22 @@ public class DBConfig {
     @Bean
     @Profile("dev")
     public String devDatabaseConnection() {
-        LOGGER.info("\n-----------------------------------------");
         LOGGER.info("DB connection for DEV - H2");
-        LOGGER.info("Driver class name: " + driverClassName);
-        LOGGER.info("URL: " + url);
-        LOGGER.info("Username: " + username);
-        LOGGER.info("Password: " + password);
-        LOGGER.info("-----------------------------------------\n");
+        LOGGER.info("Driver class name: {}", driverClassName);
+        LOGGER.info("URL: {}", url);
+        LOGGER.info("Username: {}", username);
+        LOGGER.info("Password: {}", password);
         return "DB connection for DEV - H2";
     }
 
     @Bean
     @Profile("prod")
     public String prodDatabaseConnection() {
-        LOGGER.info("\n-----------------------------------------");
-        LOGGER.info("DB connection for DEV - Postgres");
-        LOGGER.info("Driver class name: " + driverClassName);
-        LOGGER.info("URL: " + url);
-        LOGGER.info("Username: " + username);
-        LOGGER.info("Password: " + password);
-        LOGGER.info("-----------------------------------------\n");
+        LOGGER.info("DB connection for PROD - Postgres");
+        LOGGER.info("Driver class name: {}", driverClassName);
+        LOGGER.info("URL: {}", url);
+        LOGGER.info("Username: {}", username);
+        LOGGER.info("Password: {}", password);
         return "DB connection for PROD - Postgres";
     }
 }

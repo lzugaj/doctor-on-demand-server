@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-        gradle 'Gradle 6.5.1'
-    }
-
     triggers {
         pollSCM '* * * * *'
     }
@@ -11,25 +7,25 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh 'gradlew clean'
+                gradlew('clean')
             }
         }
 
         stage('Build') {
             steps {
-                sh 'gradlew assemble'
+                gradlew('assemble')
             }
         }
 
         stage('Test') {
             steps {
-                sh 'gradlew test'
+                gradlew('test')
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'gradlew build -x test'
+                gradlew('build')
             }
         }
     }

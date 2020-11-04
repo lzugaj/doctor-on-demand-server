@@ -23,6 +23,12 @@ pipeline {
             }
         }
 
+        stage('SonarQube Analysis') {
+            steps {
+                bat './gradlew sonar'
+            }
+        }
+
         stage('Deploy') {
             steps {
                 bat './gradlew build'

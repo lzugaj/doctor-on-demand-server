@@ -4,19 +4,24 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
+        stage('Clean') {
+            steps {
+                sh 'gradlew clean'
+            }
+        }
         stage('Build') {
             steps {
-                sh 'gradle assemble'
+                sh 'gradlew assemble'
             }
         }
         stage('Test') {
             steps {
-                sh 'gradle test'
+                sh 'gradlew test'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'gradle build'
+                sh 'gradlew build -x test'
             }
         }
     }

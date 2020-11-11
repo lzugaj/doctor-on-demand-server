@@ -10,6 +10,12 @@ pipeline {
 
     if (branch == 'develop') {
         stages {
+            stage('Checkout') {
+                steps {
+                    git branch: 'develop', credentialsId: 'lzugaj', url: 'https://github.com/lzugaj/doctor-on-demand-server.git'
+                }
+            }
+
             stage('Clean') {
                 steps {
                     checkout scm
@@ -35,7 +41,8 @@ pipeline {
                 }
             }
 
-            // Push to Docker container
+            // Build Docker image
+            // Push Docker image
         }
     }
 }

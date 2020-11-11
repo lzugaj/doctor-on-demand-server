@@ -1,14 +1,18 @@
+def version = ${env.BUILD_NUMBER}
+def branch = env.BRANCH_NAME
+
 pipeline {
     agent any
+
     triggers {
         pollSCM '* * * * *'
     }
 
-    def branch = env.BRANCH_NAME
-    if (branch == 'develop' || branch == 'master') {
+    if (branch == 'develop') {
         stages {
             stage('Clean') {
                 steps {
+                    checkout scm
                     bat './gradlew clean'
                 }
             }
@@ -31,11 +35,7 @@ pipeline {
                 }
             }
 
-            stage('Deploy') {
-                steps {
-                    bat './gradlew build'
-                }
-            }
+            // Push to Docker container
         }
     }
 }

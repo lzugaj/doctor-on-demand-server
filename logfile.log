@@ -1,0 +1,94 @@
+2020-11-08 17:46:45,993 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Starting DoctorOnDemandApplicationTests on lzugaj with PID 15512 (started by lzugaj in C:\Workspace\doctor-on-demand\doctor-on-demand-server)
+2020-11-08 17:46:45,995 DEBUG com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-08 17:46:45,995 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] The following profiles are active: prod
+2020-11-08 17:46:46,902 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-08 17:46:46,924 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 13ms. Found 0 JPA repository interfaces.
+2020-11-08 17:46:47,680 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:46:48,626 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:46:48,869 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] DB connection for PROD - Postgres
+2020-11-08 17:46:48,869 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Driver class name: org.postgresql.Driver
+2020-11-08 17:46:48,869 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] URL: jdbc:postgresql://localhost:5432/doctor_on_demand
+2020-11-08 17:46:48,870 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Username: postgres
+2020-11-08 17:46:48,870 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Password: postgres
+2020-11-08 17:46:49,060 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-08 17:46:50,084 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [Test worker] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-08 17:46:50,199 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-08 17:46:50,244 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Test worker] Starting Quartz Scheduler now
+2020-11-08 17:46:50,246 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Triggering deferred initialization of Spring Data repositories…
+2020-11-08 17:46:50,246 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Spring Data repositories initialized!
+2020-11-08 17:46:50,269 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Started DoctorOnDemandApplicationTests in 4.657 seconds (JVM running for 6.14)
+2020-11-08 17:46:50,549 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Starting DoctorOnDemandApplication on lzugaj with PID 15512 (started by lzugaj in C:\Workspace\doctor-on-demand\doctor-on-demand-server)
+2020-11-08 17:46:50,549 DEBUG com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-08 17:46:50,549 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] The following profiles are active: prod
+2020-11-08 17:46:50,823 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-08 17:46:50,826 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 2ms. Found 0 JPA repository interfaces.
+2020-11-08 17:46:51,051 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat initialized with port(s): 8090 (http)
+2020-11-08 17:46:51,189 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [Test worker] Root WebApplicationContext: initialization completed in 638 ms
+2020-11-08 17:46:51,504 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:46:51,839 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:46:51,930 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] DB connection for PROD - Postgres
+2020-11-08 17:46:51,931 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Driver class name: org.postgresql.Driver
+2020-11-08 17:46:51,931 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] URL: jdbc:postgresql://localhost:5432/doctor_on_demand
+2020-11-08 17:46:51,931 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Username: postgres
+2020-11-08 17:46:51,931 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Password: postgres
+2020-11-08 17:46:51,972 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-08 17:46:52,349 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [Test worker] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-08 17:46:52,390 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-08 17:46:52,433 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat started on port(s): 8090 (http) with context path '/doctor-on-demand/api/v1'
+2020-11-08 17:46:52,434 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Test worker] Starting Quartz Scheduler now
+2020-11-08 17:46:52,434 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Triggering deferred initialization of Spring Data repositories…
+2020-11-08 17:46:52,434 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Spring Data repositories initialized!
+2020-11-08 17:46:52,438 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Started DoctorOnDemandApplication in 1.916 seconds (JVM running for 8.31)
+2020-11-08 17:46:52,458 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [SpringContextShutdownHook] Shutting down Quartz Scheduler
+2020-11-08 17:46:52,463 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:46:52,464 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:46:52,985 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [SpringContextShutdownHook] Shutting down Quartz Scheduler
+2020-11-08 17:46:52,987 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:46:52,987 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:49:08,733 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Starting DoctorOnDemandApplicationTests on lzugaj with PID 22268 (started by lzugaj in C:\Workspace\doctor-on-demand\doctor-on-demand-server)
+2020-11-08 17:49:08,735 DEBUG com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-08 17:49:08,735 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] The following profiles are active: prod
+2020-11-08 17:49:09,643 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-08 17:49:09,666 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-11-08 17:49:10,236 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:49:11,293 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:49:11,511 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] DB connection for PROD - Postgres
+2020-11-08 17:49:11,512 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Driver class name: org.postgresql.Driver
+2020-11-08 17:49:11,512 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] URL: jdbc:postgresql://localhost:5432/doctor_on_demand
+2020-11-08 17:49:11,513 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Username: postgres
+2020-11-08 17:49:11,513 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Password: postgres
+2020-11-08 17:49:11,701 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-08 17:49:12,655 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [Test worker] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-08 17:49:12,767 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-08 17:49:12,810 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Test worker] Starting Quartz Scheduler now
+2020-11-08 17:49:12,811 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Triggering deferred initialization of Spring Data repositories…
+2020-11-08 17:49:12,813 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Spring Data repositories initialized!
+2020-11-08 17:49:12,834 INFO com.luv2code.doctorondemand.DoctorOnDemandApplicationTests [Test worker] Started DoctorOnDemandApplicationTests in 4.485 seconds (JVM running for 5.961)
+2020-11-08 17:49:13,100 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Starting DoctorOnDemandApplication on lzugaj with PID 22268 (started by lzugaj in C:\Workspace\doctor-on-demand\doctor-on-demand-server)
+2020-11-08 17:49:13,101 DEBUG com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-11-08 17:49:13,101 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] The following profiles are active: prod
+2020-11-08 17:49:13,367 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-08 17:49:13,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [Test worker] Finished Spring Data repository scanning in 2ms. Found 0 JPA repository interfaces.
+2020-11-08 17:49:13,584 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat initialized with port(s): 8090 (http)
+2020-11-08 17:49:13,733 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [Test worker] Root WebApplicationContext: initialization completed in 630 ms
+2020-11-08 17:49:13,993 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Test worker] Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:49:14,337 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [task-1] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:49:14,440 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] DB connection for PROD - Postgres
+2020-11-08 17:49:14,441 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Driver class name: org.postgresql.Driver
+2020-11-08 17:49:14,441 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] URL: jdbc:postgresql://localhost:5432/doctor_on_demand
+2020-11-08 17:49:14,441 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Username: postgres
+2020-11-08 17:49:14,441 INFO com.luv2code.doctorondemand.config.DBConfig [Test worker] Password: postgres
+2020-11-08 17:49:14,475 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-08 17:49:14,858 WARN org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration [Test worker] Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2020-11-08 17:49:14,901 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [Test worker] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-11-08 17:49:14,941 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [Test worker] Tomcat started on port(s): 8090 (http) with context path '/doctor-on-demand/api/v1'
+2020-11-08 17:49:14,942 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [Test worker] Starting Quartz Scheduler now
+2020-11-08 17:49:14,942 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Triggering deferred initialization of Spring Data repositories…
+2020-11-08 17:49:14,943 INFO org.springframework.data.repository.config.DeferredRepositoryInitializationListener [Test worker] Spring Data repositories initialized!
+2020-11-08 17:49:14,947 INFO com.luv2code.doctorondemand.DoctorOnDemandApplication [Test worker] Started DoctorOnDemandApplication in 1.875 seconds (JVM running for 8.074)
+2020-11-08 17:49:14,967 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [SpringContextShutdownHook] Shutting down Quartz Scheduler
+2020-11-08 17:49:14,970 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:49:14,974 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-08 17:49:15,513 INFO org.springframework.scheduling.quartz.SchedulerFactoryBean [SpringContextShutdownHook] Shutting down Quartz Scheduler
+2020-11-08 17:49:15,514 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-08 17:49:15,515 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'

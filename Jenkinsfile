@@ -29,10 +29,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                bat './gradlew build'
-            }
-        }
+        // Build Docker image
+        // Push Docker image
     }
 }
